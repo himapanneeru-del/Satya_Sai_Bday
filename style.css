@@ -1,0 +1,186 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #fffaf0;
+    color: #5b3a12;
+}
+
+header {
+    min-height: 75px;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    background: #fffdf7;
+    box-shadow: 0 2px 15px #b8863325;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a66a12;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #70470e;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d69a22;
+}
+
+button, .btn {
+    background: linear-gradient(135deg, #dcae48, #a66a12);
+    color: white;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background:
+    linear-gradient(#fff9e8c9, #fff5dfd9),
+    url("../images/sai-baba.jpg") center 25%/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 800px;
+    animation: appear 1.5s ease;
+}
+
+.welcome {
+    letter-spacing: 4px;
+    color: #a66a12;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(38px, 7vw, 76px);
+    color: #70400c;
+    line-height: 1.2;
+}
+
+h1 span {
+    color: #b17a1d;
+}
+
+.hero h2 {
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.quote {
+    font-size: 30px;
+    color: #a66a12;
+    font-style: italic;
+    margin: 25px 0;
+}
+
+.sub {
+    margin-bottom: 30px;
+}
+
+.message {
+    padding: 75px 20px;
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.message h2 {
+    color: #a66a12;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.message p {
+    line-height: 1.9;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #68400d;
+    color: #fff5dd;
+    line-height: 2;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width: 700px) {
+    header {
+        justify-content: center;
+    }
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+    .hero {
+        min-height: 75vh;
+    }
+}
+
+.value-card {
+    background: #fff;
+    border: 1px solid #e8ca8c;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 650px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #b8863318;
+}
+
+.value-card h2 {
+    color: #a66a12;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    line-height: 1.8;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid #e8ca8c;
+    box-shadow: 0 5px 20px #b8863325;
+}
